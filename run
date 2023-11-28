@@ -1,0 +1,7 @@
+nohup python tools/run_net.py \
+  --cfg configs/K400/motionformer_224_16x4.yaml \
+  DATA.PATH_TO_DATA_DIR ./csv_ytid \
+  NUM_GPUS 1 \
+  TRAIN.BATCH_SIZE 8 \
+  > result.log 2>&1 &
+
